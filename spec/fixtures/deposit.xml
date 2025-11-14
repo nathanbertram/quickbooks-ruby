@@ -30,7 +30,7 @@
   <Line>
     <Id>2</Id>
     <LineNum>2</LineNum>
-    <Amount>100.00</Amount>
+    <Amount>13.77</Amount>
     <DetailType>DepositLineDetail</DetailType>
     <DepositLineDetail>
       <Entity name="John Doe" type="CUSTOMER">59</Entity>
@@ -40,5 +40,5 @@
     </DepositLineDetail>
   </Line>
   <DepositToAccountRef name="Checking">4</DepositToAccountRef>
-  <TotalAmt>200.00</TotalAmt>
+  <TotalAmt>213.27</TotalAmt>
 </Deposit>

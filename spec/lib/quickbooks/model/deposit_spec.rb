@@ -14,7 +14,7 @@ describe "Quickbooks::Model::Deposit" do
     expect(deposit.txn_status).to be_nil
     expect(deposit.line_items.size).to eq(3)
     expect(deposit.deposit_to_account_ref.value).to eq("4")
-    expect(deposit.total).to eq(200.0)
+    expect(deposit.total).to eq(213.27)
     expect(deposit.currency_ref.value).to eq('USD')
     expect(deposit.exchange_rate).to be_nil
     expect(deposit.line_items[1].deposit_line_detail.entity_ref.type).to eq('CUSTOMER')
@@ -39,7 +39,7 @@ describe "Quickbooks::Model::Deposit" do
 
     line_item3 = deposit.line_items[2]
     expect(line_item3.id).to eq("2")
-    expect(line_item3.amount).to eq(100.00)
+    expect(line_item3.amount).to eq(13.77)
     expect(line_item3.deposit_line_detail?).to eq(true)
     expect(line_item3.deposit_line_detail.entity_ref.type).to eq('CUSTOMER')
     expect(line_item3.deposit_line_detail.entity_ref.name).to eq('John Doe')
